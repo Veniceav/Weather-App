@@ -1,0 +1,69 @@
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+.flex-row {
+    display: flex;
+    align-items:center;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.mainContainer {
+    height: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.weatherApp {
+    max-width: 1200px;
+    max-height: 600px;
+    height: 100%;
+    width: 100%;
+    background-color: red;
+}
+
+.overviewContainer {
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 25%;
+    background-color: blue;
+    
+}
+
+#overviewImage {
+    width: 250px;
+    height: 250px;
+    background-color: yellow;
+    border-radius: 250px;
+}
+
+#overviewLabel {
+    font-size: 32px;
+    margin-top: 32px;
+}
+
+.weatherDetails {
+    position: relative;
+    flex-grow: 1;
+    height: 100%;
+}
+
+.tempDetails {
+    height: 50%;
+    flex-grow: 1;
+    background-color: green;
+}
+
+.extraDetails {
+    height: 50%;
+    flex-grow: 1;
+    background-color: purple;
+}
