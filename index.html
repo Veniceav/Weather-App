@@ -1,20 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Weather App</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <div  class="mainContainer">
+    <div class="mainContainer">
+        
         <div class="weatherApp flex-row">
-                <div class="overviewContainer flex-column">
-                    <div id="overviewImage"></div>
-                    <div id="overviewLabel">Sunny</div>
+            <div class="overviewContainer flex-column">
+                <div class="searchBarContainer">
+                    <input type="text" placeholder="Search..." id="searchBar">
                 </div>
-                <div class="weatherDetails flex-row">
+                <div id="overviewImage"></div>
+                <div id="overviewLabel">Sunny</div>
+            </div>
+            <div class="weatherDetails flex-row">
+                <div class="weatherDetailsBox flex-row">
                     <div class="tempDetails flex-column">
                         <div id="activeTemp">24 C</div>
                         <div id="feelsLikeTemp">Feels like 22 C</div>
@@ -23,12 +32,15 @@
                     </div>
                     <div class="extraDetails flex-column">
                         <div id="location">London, En</div>
-                        <div id="humidity"> Humidity: 49%</div>
-                        <div id="windSpeed">90 kph</div>
-                        <div id="cloudiness">Cloudiness: 10%</div>
+                        <div id="humidity"> Humidity: <span id="humidityUnits">49%</span></div>
+                        <div id="windSpeed">Windspeed: <span id="speedUnits">90 KPH</span></div>
+                        <div id="cloudiness">Cloudiness:<span id=CloudinessUnits>10%</span></div>
                     </div>
-                </div>                     
+                </div>
+            </div>
         </div>
-    </div>    
+    </div>
+    </div>
 </body>
+
 </html>

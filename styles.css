@@ -21,7 +21,11 @@ html, body {
 
 }
 
+
+
 .weatherApp {
+    border: 1px solid black;
+    border-radius: 20px;
     max-width: 1200px;
     max-height: 600px;
     height: 100%;
@@ -30,12 +34,19 @@ html, body {
 }
 
 .overviewContainer {
+    border: 1px solid black;
+    border-radius: 20px;
     align-items: center;
     justify-content: center;
     height: 100%;
     width: 25%;
     background-color: blue;
     
+}
+
+.searchBarContainer {
+    position:absolute;
+    top: 28%;
 }
 
 #overviewImage {
@@ -56,14 +67,73 @@ html, body {
     height: 100%;
 }
 
-.tempDetails {
-    height: 50%;
+.weatherDetailsBox {
+    border: 1px solid black;
+    border-radius: 20px;
+    position: relative;
     flex-grow: 1;
-    background-color: green;
+    height: 50%;
+    margin: 0 5%;
+    background-color: blanchedalmond;
 }
 
-.extraDetails {
-    height: 50%;
+.tempDetails { 
+    max-width: 100%;  
+    height: 100%;
     flex-grow: 1;
-    background-color: purple;
 }
+
+
+.extraDetails {
+    padding-right: 2%;
+    text-align: right;
+    height: 100%;
+    flex-grow: 1;
+}
+
+#activeTemp,
+#feelsLikeTemp,
+#highTemp,
+#lowTemp {
+    margin-left: 5%;
+}
+
+#activeTemp {
+    margin-top: 15%;
+    width:100%;
+    margin-left: 93%;
+    font-size: 4rem;
+}
+
+#feelsLikeTemp {
+    margin-left: 93%;
+    width: 100%;
+    font-size: 1.2rem;
+    margin-top: 1%;
+    word-break: break-all;
+}
+
+#highTemp,
+#lowTemp {
+    font-size: 1.4rem;
+    margin-top: 8%;
+}
+
+#location {
+    font-size: 1.5rem;
+}
+
+#humidity {
+    font-size: 1.5rem;
+    margin-top: 35%;
+}
+
+#windSpeed,
+#cloudiness {
+    font-size: 1.4rem;
+    margin-top: 3%;
+}
+
+
+
+
