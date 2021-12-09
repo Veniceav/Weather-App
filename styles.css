@@ -185,6 +185,8 @@ html, body {
     margin-top: 3%;
 }
 
-
+.weatherDetails.loading {
+    visibility: hidden;
+}
 
 
